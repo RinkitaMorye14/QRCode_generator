@@ -111,13 +111,13 @@ body{
     }
     
     #op_box img{
-        width:25vw;
+        width:40vw;
         height:25vh;
     }
     
     #op_box.showImg{
         max-height: 50vh;
-        max-width: 25vw;
+        max-width: 45vw;
         margin: 10px auto;
     }
 }
