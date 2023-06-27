@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color: #5181bb;
+}
+.container{
+    width: 30vw;
+    padding: 2vh 4vw;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(19, 18, 18, 0.34);
+}
+.container p{
+    text-align: center;
+    font-weight: 600;
+    font-size: 3.4vh;
+    margin-bottom: 1vw;
+}
+
+.container input{
+    font-size: 1.2vw;
+    width: 100%;
+    height:8vh;
+    border:1px solid #494eea;
+    outline: 0;
+    padding: 10px;
+    margin:10px 0 10px;
+    border-radius: 5px;
+    text-align: center ;
+}
+
+.container #generate_btn{
+    width: 100%;
+    height:8vh;
+    background-color:#494eea;
+    color:#eea;
+    border:0;
+    outline: 0;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1) ;
+    cursor: pointer;
+    margin: 20px 0;
+    font-weight: 500;
+}
+#op_box{
+    width:14vw;
+    border-radius: 1vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+#op_box img{
+    width:14vw;
+    height:fit-content;
+}
+
+#op_box.showImg{
+    max-height: 300px;
+    max-width: 22vw;
+    margin: 10px auto;
+}
+.error{
+    animation: shake 0.2s linear 10;
+    border:1px solid #383842;
+}
+
+@keyframes shake{
+    0%{transform:translateX(0);}
+    25%{transform:translateX(-3px);}
+    50%{transform:translateX(0);}
+    75%{transform:translateX(4px);}
+    100%{transform:translateX(0);}
+}
