@@ -102,4 +102,22 @@ body{
         border-radius: 5px;
         text-align: center ;
     }
+        #op_box{
+        width:30vw;
+        border-radius: 1vw;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+    
+    #op_box img{
+        width:25vw;
+        height:25vh;
+    }
+    
+    #op_box.showImg{
+        max-height: 50vh;
+        max-width: 25vw;
+        margin: 10px auto;
+    }
 }
